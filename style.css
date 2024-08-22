@@ -404,7 +404,6 @@ p {
         .statistics-section-main {
             padding: 10rem 0;
             background-image: var(--gradient-color-opacity), url(banner4.jpg);
-            background-attachment: fixed;
             background-size: cover;
             background-position: center;
             color:white;
@@ -815,6 +814,13 @@ p {
     flex: 1 1 calc(50% - 20px);
     display: flex;
     flex-direction: column;
+    transition-duration:0.6s;
+}
+.service-card:hover {
+
+    box-shadow:  12px 12px 24px #b1b1b1,
+                 -12px -12px 24px #ffffff;
+                 transform: translate(10px);
 }
 
 .service-image {
