@@ -806,6 +806,7 @@ p {
     gap: 20px;
 }
 
+/* Desktop view */
 .service-card {
     background: #fff;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
@@ -814,13 +815,11 @@ p {
     flex: 1 1 calc(50% - 20px);
     display: flex;
     flex-direction: column;
-    transition-duration:0.6s;
+    transition-duration: 0.6s;
 }
 .service-card:hover {
-
-    box-shadow:  12px 12px 24px #b1b1b1,
-                 -12px -12px 24px #ffffff;
-                 transform: translate(10px);
+    box-shadow: 12px 12px 24px #b1b1b1, -12px -12px 24px #ffffff;
+    transform: translate(10px);
 }
 
 .service-image {
@@ -845,3 +844,9 @@ p {
     line-height: 1.5;
 }
 
+/* Mobile view */
+@media (max-width: 768px) {
+    .service-card {
+        flex: 1 1 100%;
+    }
+}
